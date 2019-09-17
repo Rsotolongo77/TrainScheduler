@@ -1,0 +1,21 @@
+
+body {
+
+    background-color: rgb(238, 226, 211);
+
+}
+.jumbotron {
+
+    background-color: rgb(68, 68, 204);
+    font-family: 'Satisfy', cursive;
+    text-align: center;
+    color: rgb(235, 214, 187);
+    text-shadow: 3px 3px black;
+    border: 1px solid rgb(37, 37, 37);
+    height: 25vh;
+    
+
+}
+    
+
+
