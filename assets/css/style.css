@@ -5,14 +5,15 @@ body {
 
 }
 .jumbotron {
-
-    background-color: rgb(68, 68, 204);
+    
+    background: linear-gradient(rgb(111, 111, 209), rgb(68, 68, 204));
     font-family: 'Satisfy', cursive;
     text-align: center;
     color: rgb(235, 214, 187);
     text-shadow: 3px 3px black;
-    border: 1px solid rgb(37, 37, 37);
+    border: 2px solid rgb(37, 37, 37);
     height: 25vh;
+    border-radius: 10px;
     
 
 }
@@ -23,6 +24,7 @@ body {
     font-family: 'Big Shoulders Text', cursive;
     font-size: xx-large;
     color: rgb(226, 211, 211);
+    border: 1px solid rgb(37, 37, 37);
     
 
 
@@ -32,6 +34,25 @@ tr {
 
     font-family: 'Big Shoulders Text', cursive;
     font-size: 1.5em;
+    
 
 }
 
+
+.form-group {
+
+    font-family: 'Satisfy', cursive;
+    font-size: large;
+
+}
+
+button {
+
+    background: linear-gradient(rgb(102, 102, 221), rgb(68, 68, 204));
+    color: white;
+    border-radius: 7px;
+    height: 6vh;
+    widows: 30vw;
+    border: 1px solid rgb(37, 37, 37);
+
+}
