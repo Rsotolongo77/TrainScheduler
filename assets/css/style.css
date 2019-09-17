@@ -1,7 +1,7 @@
 
 body {
 
-    background-color: rgb(238, 226, 211);
+    background-color: rgb(250, 241, 231);
 
 }
 .jumbotron {
@@ -17,5 +17,21 @@ body {
 
 }
     
+.card-header {
 
+    background-color: rgb(68, 68, 204);
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: xx-large;
+    color: rgb(226, 211, 211);
+    
+
+
+}
+
+tr {
+
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 1.5em;
+
+}
 
