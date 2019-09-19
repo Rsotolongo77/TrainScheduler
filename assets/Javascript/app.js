@@ -91,13 +91,16 @@ $(document).ready(function () {
         console.log("ARRIVAL TIME: " + moment(nextTrain).format("hh:mm"));
 
 
-        var tr = $("<tr>");
+        
 
-            tr.append("<td>" + tName + "<td>"),
-            tr.append("<td>" + tDestination + "</td>"),
-            tr.append("<td>" + tFrequency + "</td>"),
-            tr.append("<td>" + moment(nextTrain).format("hh:mm a") + "</td>"),
-            tr.append("<td>" + tMinutesTillTrain + "</td>");
+            var tr = $("<tr>").append(
+                $("<td>").text(tName),
+                $("<td>").text(tDestination),
+                $("<td>").text(tFrequency),
+                $("<td>").text(moment(nextTrain).format("hh:mm a")),
+                $("<td>").text(tMinutesTillTrain),
+                
+              );
 
 
         $("tbody").append(tr);
