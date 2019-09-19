@@ -20,8 +20,7 @@ $(document).ready(function () {
     var trainDestination;
     var trainfrequency;
     var firstTrainTime;
-    //var trainNextArrival;
-    //var trainMinutesAway;
+    
 
 
     $("#add-train").on("click", function (event) {
@@ -49,7 +48,7 @@ $(document).ready(function () {
 
         })
 
-        alert("Train added...!");
+        
 
         $("#train-input").val("");
         $("#destination-input").val("");
@@ -94,7 +93,7 @@ $(document).ready(function () {
 
         var tr = $("<tr>");
 
-        tr.append("<td>" + tName + "<td>"),
+            tr.append("<td>" + tName + "<td>"),
             tr.append("<td>" + tDestination + "</td>"),
             tr.append("<td>" + tFrequency + "</td>"),
             tr.append("<td>" + moment(nextTrain).format("hh:mm a") + "</td>"),
