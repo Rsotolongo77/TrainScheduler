@@ -13,7 +13,7 @@ $(document).ready(function () {
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
 
-
+    
     var database = firebase.database();
 
     var trainName;
@@ -22,7 +22,7 @@ $(document).ready(function () {
     var firstTrainTime;
     
 
-
+    //on click gets user user input values from form// 
     $("#add-train").on("click", function (event) {
 
         event.preventDefault();
@@ -37,7 +37,7 @@ $(document).ready(function () {
         console.log(trainfrequency);
         console.log(firstTrainTime);
 
-
+        //pushes objects to database//
         database.ref().push({
 
             dbTrainName: trainName,
@@ -49,7 +49,7 @@ $(document).ready(function () {
         })
 
         
-
+        //empties inputs for next train information user wants to put in//
         $("#train-input").val("");
         $("#destination-input").val("");
         $("#frequency-input").val("");
@@ -57,7 +57,7 @@ $(document).ready(function () {
 
     })
 
-
+    //Gets values back from database to then convert and push final values/inputs to HTMl page//
     database.ref().on("child_added", function (snapshot) {
 
         console.log(snapshot.val());
@@ -92,7 +92,7 @@ $(document).ready(function () {
 
 
         
-
+        //dynamically create a table row to display final data for train//
             var tr = $("<tr>").append(
                 $("<td>").text(tName),
                 $("<td>").text(tDestination),
@@ -102,7 +102,7 @@ $(document).ready(function () {
                 
               );
 
-
+        //dynamically create a table row to display final data for train//
         $("tbody").append(tr);
 
     });
