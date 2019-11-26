@@ -9,6 +9,7 @@
 4. jQuery
 5. Firebase
 6. Moment
+7. CSS
 
 ### How the ap works:
  The user is allowed to input values via form, the programs logic then reflects those values to the main train schedule board. All values are logged into a third party database. 
